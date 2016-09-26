@@ -13,6 +13,7 @@ Beaglebone cape with 24-bit sigma-delta A/D, VCXO, and split power supplies for 
 9. Added LEDs on 3.3V power and LED[1:0]
 10. FIXME - change ADR445ARMZ to ADR441ARMZ 2.5V ref, or ADR444ARMZ 4.096V ref. 5V is too close to AVDD span.  
 11. Remove R9 and connect AD7175 CS# to PRU9_28/CS0
+12. Increase soft start time: add 1 uF in parallel to both C43 and C44.  Change C23 to 200 nF.
 
 # Pin usage
     CS       <--> P9_28  PRU0_3 / CS0 (CS was tied low through resistor R9)  
